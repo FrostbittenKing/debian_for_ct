@@ -12,7 +12,7 @@ Requirements:
 How to install:
 
  * do everything as root, or use sudo
- * wipe sdcard with sdisk:
+ * wipe sdcard with fdisk:
    1. fdisk /dev/sdX
    2. type 'o' to create a new disk label/wipe partitions
    3. create a new 256MB partiton, with 'n', 'p' etc etc.
@@ -24,11 +24,9 @@ How to install:
  * mount /dev/sdX1 /mnt/cubie_deb
  * tar -C /mnt/cubie_deb -xvf bootfs-part1.tar.gz
  * umount /mnt/cubie_deb
- * sync
  * mount /dev/sdX2 /mnt/cubie_deb
  * tar -C /mnt/cubie_deb -xvf cubie_rootfs.tar.xz
  * umount /mnt/cubie_deb
- * sync
 
 Now insert the microSD card into the sdcard reader of your cubietruck, and boot it.
 
